@@ -1,73 +1,203 @@
-# Welcome to your Lovable project
+# Aryan Events - Premium Event Management
 
-## Project info
+![Aryan Events Logo](src/assets/logo.png)
 
-**URL**: https://lovable.dev/projects/a6a19c1d-ff68-453d-aa42-696740ade7f7
+A modern, responsive website for Aryan Events - a premium event management company based in Kottarakara, Kerala, India. We specialize in creating unforgettable moments for weddings, corporate events, and special celebrations.
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+- **Modern & Responsive Design** - Fully responsive across all devices (desktop, tablet, mobile)
+- **Interactive Video Portfolio** - Showcase event highlights with hover-to-play videos in 9:16 aspect ratio
+- **Smooth Animations** - Engaging animations and transitions throughout the site
+- **Service Showcase** - Comprehensive display of event management services
+- **Client Testimonials** - Social proof section for customer reviews
+- **Contact Integration** - Easy contact form and WhatsApp integration
+- **SEO Optimized** - Meta tags and structured data for better search visibility
 
-**Use Lovable**
+## 🚀 Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a6a19c1d-ff68-453d-aa42-696740ade7f7) and start prompting.
+- **Frontend Framework:** React 18.3.1
+- **Build Tool:** Vite 5.4.19
+- **Language:** TypeScript 5.8.3
+- **Styling:** Tailwind CSS 3.4.17
+- **UI Components:** shadcn/ui + Radix UI primitives
+- **Icons:** Lucide React
+- **Routing:** React Router DOM 6.30.1
+- **State Management:** @tanstack/react-query 5.83.0
+- **Form Handling:** React Hook Form + Zod validation
+- **Animations:** Custom CSS animations with Tailwind
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📋 Prerequisites
 
-**Use your preferred IDE**
+Before you begin, ensure you have the following installed:
+- **Node.js** (v18 or higher) - [Download](https://nodejs.org/)
+- **npm** or **bun** package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Installation & Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 1. Clone the repository
 
-Follow these steps:
+```bash
+git clone https://github.com/salahudheenthajudheen/aryan-events.git
+cd aryan-events
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 2. Install dependencies
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Using npm:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+Or using bun:
+```bash
+bun install
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 3. Start the development server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Available Scripts
 
-**Use GitHub Codespaces**
+- **`npm run dev`** - Start development server on port 8080
+- **`npm run build`** - Build for production
+- **`npm run build:dev`** - Build in development mode
+- **`npm run preview`** - Preview production build locally
+- **`npm run lint`** - Run ESLint for code quality checks
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🏗️ Project Structure
 
-## What technologies are used for this project?
+```
+aryan-events-main/
+├── public/              # Static assets
+├── src/
+│   ├── assets/         # Images, videos, and media files
+│   ├── components/     # React components
+│   │   ├── ui/        # Reusable UI components (shadcn)
+│   │   ├── About.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Gallery.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navigation.tsx
+│   │   ├── Services.tsx
+│   │   ├── Testimonials.tsx
+│   │   └── WhatsAppButton.tsx
+│   ├── hooks/         # Custom React hooks
+│   ├── lib/           # Utility functions
+│   ├── pages/         # Page components
+│   │   ├── Index.tsx
+│   │   └── NotFound.tsx
+│   ├── App.tsx        # Main App component
+│   ├── main.tsx       # Application entry point
+│   └── index.css      # Global styles
+├── index.html
+├── package.json
+├── tsconfig.json
+├── tailwind.config.ts
+└── vite.config.ts
+```
 
-This project is built with:
+## 🎨 Key Components
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Navigation
+- Fixed navigation bar with logo
+- Smooth scroll-to-section functionality
+- Responsive mobile menu
+- "Get Quote" CTA button
 
-## How can I deploy this project?
+### Hero Section
+- Eye-catching hero with background image
+- Animated tagline and headlines
+- Call-to-action buttons
+- Statistics display (500+ events, 15+ years, 100% satisfaction)
 
-Simply open [Lovable](https://lovable.dev/projects/a6a19c1d-ff68-453d-aa42-696740ade7f7) and click on Share -> Publish.
+### Services
+- Comprehensive service showcase
+- Decorations, sound & light, photography, catering, etc.
 
-## Can I connect a custom domain to my Lovable project?
+### Gallery/Portfolio
+- Video portfolio in 9:16 aspect ratio
+- Hover-to-play functionality
+- Automatic loop and reset on mouse leave
 
-Yes, you can!
+### Contact
+- Contact form with validation
+- Contact information display
+- WhatsApp integration button
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🎯 Services Offered
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. **Marriage Functions** - Complete wedding planning and execution
+2. **Stage Decorations** - Creative and elegant stage setups
+3. **Sound & Light** - Professional audio-visual services
+4. **Photography & Videography** - Professional event coverage
+5. **Catering Services** - Delicious food arrangements
+6. **Entertainment** - DJ, live music, and performances
+
+## 🌐 Deployment
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+The build output will be in the `dist/` directory.
+
+### Deploy to Vercel, Netlify, or similar platforms
+
+1. Connect your GitHub repository
+2. Set build command: `npm run build`
+3. Set output directory: `dist`
+4. Deploy!
+
+## 🔧 Configuration
+
+### TypeScript Configuration
+- Path aliases configured (`@/*` → `./src/*`)
+- Strict mode disabled for flexibility
+- Modern ES2020 target
+
+### Tailwind Configuration
+- Custom color scheme (brand-gold, brand-red)
+- Custom animations (fade-in, scale-in, float)
+- Custom shadows and gradients
+- Typography plugin included
+
+## 📱 Responsive Breakpoints
+
+- **Mobile:** < 768px
+- **Tablet:** 768px - 1024px
+- **Desktop:** > 1024px
+
+## 🐛 Known Issues & Notes
+
+- TypeScript strict mode is disabled; consider enabling gradually
+- No test suite configured yet
+- 2 moderate npm audit vulnerabilities (run `npm audit fix`)
+
+## 📄 License
+
+This project is proprietary and confidential.
+
+## 👥 Contact
+
+**Aryan Events**
+- Location: Kadamkulam, Kottarakara, Kerala, India
+- Website: [Your Website URL]
+- Email: [Your Email]
+- Phone: [Your Phone Number]
+
+## 🤝 Contributing
+
+This is a private project for Aryan Events. For any changes or suggestions, please contact the repository owner.
+
+---
+
+Built with ❤️ by Aryan Events Team
